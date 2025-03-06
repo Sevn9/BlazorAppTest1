@@ -8,7 +8,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0-windowsservercore-ltsc2022 AS base
 USER ContainerUser
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 
 # This stage is used to build the service project
