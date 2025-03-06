@@ -1,0 +1,9 @@
+services:
+  blazorapptest1:
+    image: custom-blazor-app-test1
+    build:
+      context: .
+      dockerfile: BlazorAppTest1\Dockerfile
+    ports:
+    - 5000:80
+    - 5001:443
