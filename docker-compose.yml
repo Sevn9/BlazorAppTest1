@@ -6,7 +6,7 @@ services:
       dockerfile: BlazorAppTest1\Dockerfile
     ports:
     - name: web
-      target: 8080
+      target: 5000
       host_ip: 0.0.0.0
       published: "80"
       protocol: tcp
@@ -14,7 +14,7 @@ services:
       mode: host
 
     - name: web-secured
-      target: 8081
+      target: 5001
       host_ip: 0.0.0.0
       published: "443"
       protocol: tcp
